@@ -28,32 +28,32 @@ The app is using Parse as backend which is basically free. (Free plan: 20 GB Fil
 - No backend programming needed
 - Native and easy to customize user interface
 - Push Notification support
-- Deep linking for Push Notification (<i>coming soon</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Deep linking for Push Notification (<i>coming soon</i>) - **[Premium only](http://relatedcode.com/premium)**
 - Login with Email
 - Login with Facebook
 - Login with Twitter
 - Sending text messages
 - Sending pictures
 - Sending videos
-- Sending audio messages - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Sending location - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Sending stickers - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Sending audio messages - **[Premium only](http://relatedcode.com/premium)**
+- Sending location - **[Premium only](http://relatedcode.com/premium)**
+- Sending stickers - **[Premium only](http://relatedcode.com/premium)**
 - Sending large emojis
-- Load earlier messages (<i>new</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Typing indicator - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Message delivery receipt - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Message read receipt - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Save picture message content to device (<i>new</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Save video message content to device (<i>new</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Save audio message content to device (<i>new</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Delete read and unread messages - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Block user functionality - **[Premium only](http://relatedcode.com/realtimepremium)**
-- Report user functionality - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Load earlier messages (<i>new</i>) - **[Premium only](http://relatedcode.com/premium)**
+- Typing indicator - **[Premium only](http://relatedcode.com/premium)**
+- Message delivery receipt - **[Premium only](http://relatedcode.com/premium)**
+- Message read receipt - **[Premium only](http://relatedcode.com/premium)**
+- Save picture message content to device (<i>new</i>) - **[Premium only](http://relatedcode.com/premium)**
+- Save video message content to device (<i>new</i>) - **[Premium only](http://relatedcode.com/premium)**
+- Save audio message content to device (<i>new</i>) - **[Premium only](http://relatedcode.com/premium)**
+- Delete read and unread messages - **[Premium only](http://relatedcode.com/premium)**
+- Block user functionality - **[Premium only](http://relatedcode.com/premium)**
+- Report user functionality - **[Premium only](http://relatedcode.com/premium)**
 - Address Book friend list
 - Invite functionality - SMS, email
 - Facebook friend list (list only registered users)
 - Recent view for ongoing chats
-- Map view for shared locations - **[Premium only](http://relatedcode.com/realtimepremium)**
+- Map view for shared locations - **[Premium only](http://relatedcode.com/premium)**
 - Picture view for pictures
 - Basic Settings view included
 - Profile view for users
@@ -61,7 +61,7 @@ The app is using Parse as backend which is basically free. (Free plan: 20 GB Fil
 - Blocked view for blocked users
 - Privacy Policy view
 - Terms of Service view
-- In-app push notification settings (<i>coming soon</i>) - **[Premium only](http://relatedcode.com/realtimepremium)**
+- In-app push notification settings (<i>coming soon</i>) - **[Premium only](http://relatedcode.com/premium)**
 - Facebook profile picture grabbed automatically
 - Twitter profile picture grabbed automatically (<i>coming soon</i>)
 - Picture, video and audio upload progress indicator
