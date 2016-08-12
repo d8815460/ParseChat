@@ -23,6 +23,8 @@
 
 #import "ChatView.h"
 #import "ProfileView.h"
+#import <ToneAnalyzerV3/ToneAnalyzerV3.h>
+#import "app-Swift.h"
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 @interface ChatView()
@@ -40,6 +42,8 @@
 	JSQMessagesBubbleImage *bubbleImageOutgoing;
 	JSQMessagesBubbleImage *bubbleImageIncoming;
 	JSQMessagesAvatarImage *avatarImageBlank;
+    
+    id _item;
 }
 @end
 //-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -53,6 +57,10 @@
 	self = [super init];
 	groupId = groupId_;
 	return self;
+}
+
+- (void)setItem:(id)item {
+    _item = item;
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -122,10 +130,20 @@
 			{
 				BOOL incoming = NO;
 				self.automaticallyScrollsToMostRecentMessage = NO;
+                int i=0;
 				for (PFObject *object in [objects reverseObjectEnumerator])
 				{
 					JSQMessage *message = [self addMessage:object];
 					if ([self incoming:message]) incoming = YES;
+                    // 最後一句話，送IBM Tone Analyize
+                    i = i+1;
+                    if (i == objects.count) {
+                        
+                        ToneViewController *view = [[ToneViewController alloc] init];
+                        [view toneAnalayiz:[object objectForKey:@"text"] chatView:self];
+//                        [view toneAnalayiz:[object objectForKey:@"text"]];
+                    }
+                    
 				}
 				if ([objects count] != 0)
 				{
@@ -251,7 +269,17 @@
 	UpdateRecentCounter(groupId, 1, text);
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	[self finishSendingMessage];
+    
+    
+    //開始送出關鍵字，查看是否有符合關鍵字的照片檔案，
+//    PFQuery *keywordQuery = [PFQuery queryWithClassName:PF_PHOTOS_CLASS_NAME];
+//    [keywordQuery query]
+
+    
+    
 }
+
+
 
 #pragma mark - JSQMessagesViewController method overrides
 
@@ -520,4 +548,20 @@
 	return ([message.senderId isEqualToString:self.senderId] == YES);
 }
 
+
+- (void) refrashBackground:(double)tonescore AndName:(NSString *)name {
+    NSLog(@"tonescore = %.4f, name= %@", tonescore, name);
+    
+    if ([name isEqualToString:@"憤怒"]) {
+        self.collectionView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"anger2.png"]];
+    } else if ([name isEqualToString:@"高興"]) {
+        self.collectionView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"joy2.png"]];
+    } else if ([name isEqualToString:@"悲傷"]) {
+        self.collectionView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"sadness2.png"]];
+    } else if ([name isEqualToString:@"恐懼"]) {
+        self.collectionView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fear2.png"]];
+    } else {
+        self.collectionView.backgroundColor = [UIColor whiteColor];
+    }
+}
 @end

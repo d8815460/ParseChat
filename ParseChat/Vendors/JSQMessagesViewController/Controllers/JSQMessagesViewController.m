@@ -119,7 +119,7 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
 
 - (void)jsq_configureMessagesViewController
 {
-    self.view.backgroundColor = [UIColor whiteColor];
+//    self.view.backgroundColor = [UIColor whiteColor];
 
     self.jsq_isObserving = NO;
 
@@ -729,11 +729,11 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
 
 - (void)textViewDidEndEditing:(UITextView *)textView
 {
+    [textView resignFirstResponder];
+    
     if (textView != self.inputToolbar.contentView.textView) {
         return;
     }
-
-    [textView resignFirstResponder];
 }
 
 #pragma mark - Notifications
@@ -820,7 +820,6 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
 
     [self jsq_setToolbarBottomLayoutGuideConstant:heightFromBottom];
 }
-
 
 - (void)jsq_setToolbarBottomLayoutGuideConstant:(CGFloat)constant
 {

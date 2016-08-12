@@ -42,7 +42,8 @@
 	[PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:nil];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
     [Fabric with:@[[Crashlytics class]]];
-
+    
+    
 	if ([application respondsToSelector:@selector(registerUserNotificationSettings:)])
 	{
 		UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);

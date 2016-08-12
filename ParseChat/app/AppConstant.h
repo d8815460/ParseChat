@@ -47,9 +47,9 @@
 #define		PF_USER_FULLNAME_LOWER				@"fullname_lower"		//	String
 #define		PF_USER_TWITTERID					@"twitterId"			//	String
 #define		PF_USER_FACEBOOKID					@"facebookId"			//	String
-#define		PF_USER_PHONENUMBER					@"phoneNumber"			//	String
 #define		PF_USER_PICTURE						@"picture"				//	File
 #define		PF_USER_THUMBNAIL					@"thumbnail"			//	File
+#define		PF_USER_PHONENUMBER					@"phoneNumber"			//	String
 #define		PF_USER_LOCATION					@"location"				//	GeoPoint
 //-----------------------------------------------------------------------
 #define		PF_BLOCKED_CLASS_NAME				@"Blocked"				//	Class name
@@ -89,6 +89,13 @@
 #define		PF_REPORT_USER1						@"user1"				//	Pointer to User Class
 #define		PF_REPORT_USER2						@"user2"				//	Pointer to User Class
 //-------------------------------------------------------------------------------------------------------------------------------------------------
+#define		PF_PHOTOS_CLASS_NAME				@"Photos"				//	Class name
+#define		PF_PHOTOS_USER						@"user"                 //	Pointer to User Class
+#define		PF_PHOTOS_FILE						@"file"                 //	File
+#define		PF_PHOTOS_SOURCE					@"source"               //	String
+#define		PF_PHOTOS_ID                        @"id"                   //	String
+//-------------------------------------------------------------------------------------------------------------------------------------------------
+
 #define		NOTIFICATION_APP_STARTED			@"NCAppStarted"
 #define		NOTIFICATION_USER_LOGGED_IN			@"NCUserLoggedIn"
 #define		NOTIFICATION_USER_LOGGED_OUT		@"NCUserLoggedOut"

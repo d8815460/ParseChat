@@ -19,5 +19,5 @@
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 
 - (id)initWith:(NSString *)groupId_;
-
+- (void) refrashBackground:(double)tonescore AndName:(NSString *)name;
 @end
