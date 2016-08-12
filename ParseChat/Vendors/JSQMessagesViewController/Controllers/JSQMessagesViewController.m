@@ -821,6 +821,7 @@ static void * kJSQMessagesKeyValueObservingContext = &kJSQMessagesKeyValueObserv
     [self jsq_setToolbarBottomLayoutGuideConstant:heightFromBottom];
 }
 
+
 - (void)jsq_setToolbarBottomLayoutGuideConstant:(CGFloat)constant
 {
     self.toolbarBottomLayoutGuide.constant = constant;

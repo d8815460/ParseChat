@@ -25,18 +25,24 @@
 #import "SettingsView.h"
 #import "NavigationController.h"
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
+
 @implementation AppDelegate
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
-	[Parse setApplicationId:@"Az5UGI1aW3sdPpDgOGRj72SgpG4CkJFLVXfgA94U" clientKey:@"yOzGePANMNMooQN5wukzvtyDSxiOqAdkQl1dNMn4"];
+	[Parse setApplicationId:@"NMm89IAZFQbLnMp1rvwJjtQGdbjmVJFeqZ30wbpe" clientKey:@"xIcQeXFGIDIB7XaTPz0SWDoHnXwPrnBkSnDIsgL3"];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
-	[PFTwitterUtils initializeWithConsumerKey:@"kS83MvJltZwmfoWVoyE1R6xko" consumerSecret:@"YXSupp9hC2m1rugTfoSyqricST9214TwYapQErBcXlP1BrSfND"];
+	[PFTwitterUtils initializeWithConsumerKey:@"9Qslt3GNmFophalKVJSblQ" consumerSecret:@"0veCz12EFS8H1jGg5oL7NLdGSQbOrJyB0sUxsfQcI"];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	[PFFacebookUtils initializeFacebookWithApplicationLaunchOptions:nil];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
+    [Fabric with:@[[Crashlytics class]]];
+
 	if ([application respondsToSelector:@selector(registerUserNotificationSettings:)])
 	{
 		UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);

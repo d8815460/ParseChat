@@ -27,7 +27,7 @@
 #define		SCREEN_HEIGHT						[UIScreen mainScreen].bounds.size.height
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
-#define		PREMIUM_LINK						@"http://www.relatedcode.com/realtimepremium"
+#define		PREMIUM_LINK						@"http://heartbreakgarden.com"
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 #define		MESSAGE_INVITE						@"Check out chatexamples.com"
@@ -47,8 +47,10 @@
 #define		PF_USER_FULLNAME_LOWER				@"fullname_lower"		//	String
 #define		PF_USER_TWITTERID					@"twitterId"			//	String
 #define		PF_USER_FACEBOOKID					@"facebookId"			//	String
+#define		PF_USER_PHONENUMBER					@"phoneNumber"			//	String
 #define		PF_USER_PICTURE						@"picture"				//	File
 #define		PF_USER_THUMBNAIL					@"thumbnail"			//	File
+#define		PF_USER_LOCATION					@"location"				//	GeoPoint
 //-----------------------------------------------------------------------
 #define		PF_BLOCKED_CLASS_NAME				@"Blocked"				//	Class name
 #define		PF_BLOCKED_USER						@"user"					//	Pointer to User Class
