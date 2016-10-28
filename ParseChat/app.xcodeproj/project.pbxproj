@@ -16,7 +16,6 @@
 		298C86D91BB5C86E003A2AE7 /* PhotoMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 298C866D1BB5C86D003A2AE7 /* PhotoMediaItem.m */; };
 		298C86DA1BB5C86E003A2AE7 /* VideoMediaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 298C866F1BB5C86E003A2AE7 /* VideoMediaItem.m */; };
 		298C86DB1BB5C86E003A2AE7 /* PremiumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298C86721BB5C86E003A2AE7 /* PremiumView.m */; };
-		298C86DC1BB5C86E003A2AE7 /* PremiumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298C86731BB5C86E003A2AE7 /* PremiumView.xib */; };
 		298C86DD1BB5C86E003A2AE7 /* RecentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 298C86771BB5C86E003A2AE7 /* RecentCell.m */; };
 		298C86DE1BB5C86E003A2AE7 /* RecentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 298C86781BB5C86E003A2AE7 /* RecentCell.xib */; };
 		298C86DF1BB5C86E003A2AE7 /* RecentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 298C867A1BB5C86E003A2AE7 /* RecentView.m */; };
@@ -183,6 +182,7 @@
 		29EB240E19E9292500D7AA97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EB240D19E9292500D7AA97 /* AppDelegate.m */; };
 		29EB241619E9292500D7AA97 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EB241519E9292500D7AA97 /* Images.xcassets */; };
 		29EB241919E9292500D7AA97 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29EB241719E9292500D7AA97 /* LaunchScreen.xib */; };
+		4721F73D1DC3754500DF50FC /* PremiumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4721F73C1DC3754500DF50FC /* PremiumView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -200,7 +200,6 @@
 		298C866F1BB5C86E003A2AE7 /* VideoMediaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoMediaItem.m; sourceTree = "<group>"; };
 		298C86711BB5C86E003A2AE7 /* PremiumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PremiumView.h; sourceTree = "<group>"; };
 		298C86721BB5C86E003A2AE7 /* PremiumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PremiumView.m; sourceTree = "<group>"; };
-		298C86731BB5C86E003A2AE7 /* PremiumView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PremiumView.xib; sourceTree = "<group>"; };
 		298C86761BB5C86E003A2AE7 /* RecentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentCell.h; sourceTree = "<group>"; };
 		298C86771BB5C86E003A2AE7 /* RecentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentCell.m; sourceTree = "<group>"; };
 		298C86781BB5C86E003A2AE7 /* RecentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentCell.xib; sourceTree = "<group>"; };
@@ -473,6 +472,7 @@
 		29EB241519E9292500D7AA97 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		29EB241819E9292500D7AA97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		29EB254F19E92ACD00D7AA97 /* AppConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstant.h; sourceTree = "<group>"; };
+		4721F73C1DC3754500DF50FC /* PremiumView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PremiumView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -574,7 +574,7 @@
 			children = (
 				298C86711BB5C86E003A2AE7 /* PremiumView.h */,
 				298C86721BB5C86E003A2AE7 /* PremiumView.m */,
-				298C86731BB5C86E003A2AE7 /* PremiumView.xib */,
+				4721F73C1DC3754500DF50FC /* PremiumView.xib */,
 			);
 			path = Premium;
 			sourceTree = "<group>";
@@ -1314,6 +1314,7 @@
 				298C87391BB5CBA5003A2AE7 /* premium04@2x.png in Resources */,
 				298C873A1BB5CBA5003A2AE7 /* premium05@2x.png in Resources */,
 				298C873E1BB5CBA5003A2AE7 /* premium09@2x.png in Resources */,
+				4721F73D1DC3754500DF50FC /* PremiumView.xib in Resources */,
 				298C86F61BB5C86E003A2AE7 /* SelectMultipleView.xib in Resources */,
 				298C87071BB5C86E003A2AE7 /* LoginView.xib in Resources */,
 				298C86DE1BB5C86E003A2AE7 /* RecentCell.xib in Resources */,
@@ -1348,7 +1349,6 @@
 				291A2BF21B08ED4800E0E68C /* privacy.html in Resources */,
 				298C86E01BB5C86E003A2AE7 /* RecentView.xib in Resources */,
 				291A2BF31B08ED4800E0E68C /* terms.html in Resources */,
-				298C86DC1BB5C86E003A2AE7 /* PremiumView.xib in Resources */,
 				29EB241619E9292500D7AA97 /* Images.xcassets in Resources */,
 				298C870B1BB5C86E003A2AE7 /* WelcomeView.xib in Resources */,
 				299B65211BB5BF640041B4DA /* JSQMessagesCollectionViewCellIncoming.xib in Resources */,
