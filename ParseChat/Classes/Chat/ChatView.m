@@ -23,8 +23,8 @@
 
 #import "ChatView.h"
 #import "ProfileView.h"
-#import <ToneAnalyzerV3/ToneAnalyzerV3.h>
-#import "app-Swift.h"
+//#import <ToneAnalyzerV3/ToneAnalyzerV3.h>
+//#import "app-Swift.h"
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 @interface ChatView()
@@ -130,21 +130,21 @@
 			{
 				BOOL incoming = NO;
 				self.automaticallyScrollsToMostRecentMessage = NO;
-                int i=0;
-				for (PFObject *object in [objects reverseObjectEnumerator])
-				{
-					JSQMessage *message = [self addMessage:object];
-					if ([self incoming:message]) incoming = YES;
-                    // 最後一句話，送IBM Tone Analyize
-                    i = i+1;
-                    if (i == objects.count) {
-                        
-                        ToneViewController *view = [[ToneViewController alloc] init];
-                        [view toneAnalayiz:[object objectForKey:@"text"] chatView:self];
-//                        [view toneAnalayiz:[object objectForKey:@"text"]];
-                    }
-                    
-				}
+//                int i=0;
+//				for (PFObject *object in [objects reverseObjectEnumerator])
+//				{
+//					JSQMessage *message = [self addMessage:object];
+//					if ([self incoming:message]) incoming = YES;
+//                    // 最後一句話，送IBM Tone Analyize
+//                    i = i+1;
+//                    if (i == objects.count) {
+//                        
+//                        ToneViewController *view = [[ToneViewController alloc] init];
+//                        [view toneAnalayiz:[object objectForKey:@"text"] chatView:self];
+////                        [view toneAnalayiz:[object objectForKey:@"text"]];
+//                    }
+//                    
+//				}
 				if ([objects count] != 0)
 				{
 					if (initialized && incoming)
